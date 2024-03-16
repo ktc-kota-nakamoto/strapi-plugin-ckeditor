@@ -112,6 +112,8 @@ const w = {
   TextPartLanguage: window.CKEditor5.language.TextPartLanguage,
   TodoList: window.CKEditor5.list.TodoList,
   Underline: window.CKEditor5.basicStyles.Underline,
+  Video: window.CKEditor5.strapiPlugins.Video,
+  VideoResize: window.CKEditor5.strapiPlugins.VideoResize,
   WordCount: window.CKEditor5.wordCount.WordCount
 }
 
@@ -489,6 +491,8 @@ w.TableColumnResize,
 w.TableProperties,
 w.TableToolbar,
 w.Underline,
+w.Video,
+w.VideoResize,
 w.WordCount,
 ];
 
@@ -504,7 +508,7 @@ export const toolbarEditorConfig = {
     },
     '|',
     {
-      label:' ', 
+      label:' ',
       tooltip: null,
       icon:'text',
       items: [ 'bold', 'italic','fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor' ]
@@ -635,3 +639,4 @@ export const blockBalloonEditorConfig = {
     'removeFormat',
   ]
 }
+
