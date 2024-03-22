@@ -22,7 +22,7 @@ const MediaLib = ({ isOpen, onChange, onToggle, editor, uploadConfig: { responsi
       } else if (mime.includes("application/pdf")) {
         newValue = `<a href="${prefixFileUrlWithBackendUrl(url)}" download="${name}">${name || "Download PDF"}</a>`;
       } else if (mime.includes("video")) {
-        newValue = `<figure class="video"><video src="${prefixFileUrlWithBackendUrl(url)}"></video></figure>`;
+        newValue = `<figure class="video"><video controls src="${prefixFileUrlWithBackendUrl(url)}"></video></figure>`;
       }
     });
 
