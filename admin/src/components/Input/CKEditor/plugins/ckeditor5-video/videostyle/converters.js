@@ -36,7 +36,7 @@ export function viewToModelStyleAttribute( styles ) {
         const viewElement = data.viewItem;
         const modelVideoElement = first( data.modelRange.getItems() );
 
-        if ( !modelVideoElement ) {
+        if ( !modelVideoElement || !modelVideoElement.name.match(/video/) ) {
             return;
         }
 
