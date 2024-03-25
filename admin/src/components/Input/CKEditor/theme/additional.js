@@ -2,15 +2,6 @@ import { css } from "styled-components";
 
 export const additional = css`
 
-/* --- expanding --- */
-
-.ck.ck-editor__main .ck-blurred {
-    max-height: 200px;
-  }
-.ck.ck-editor__main .ck-focused {
-  	max-height: 700px;
-  }
-
 /* --- color-grid --- */
 
 .ck.ck-color-ui-dropdown {
@@ -184,4 +175,4 @@ export const additional = css`
 	color: #222;
 }
 
-` 
+`

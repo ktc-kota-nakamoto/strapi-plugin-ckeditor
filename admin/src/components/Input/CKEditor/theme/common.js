@@ -19,7 +19,7 @@ export const common = css`
     --ck-todo-list-checkmark-size: 16px;
   }
 
-  
+
   .ck.ck-sticky-panel .ck-sticky-panel__content_sticky {
     top: 64px !important;
   }
@@ -28,9 +28,9 @@ export const common = css`
   }
 
   .ck-editor__main {
-    
+
     --ck-font-face: "Source Sans Pro", system-ui, Roboto, "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    
+
     color: var(--ck-color-editor-base-text);
     font-family: var(--ck-font-face);
 
@@ -137,45 +137,12 @@ export const common = css`
 
     .ck.ck-content.ck-editor__editable {
       line-height: initial;
-      min-height: 12.5rem;
       border-bottom-left-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
-      transition-property: border-color, box-shadow, max-height;
-      transition-timing-function: ease-in-out;
-      transition-duration: 0.5s;
+
       &.ck-focused:not(.ck-editor__nested-editable) {
         border: 1px solid var(--ck-color-base-border);
-        /* border: var(--ck-focus-ring); */
         box-shadow: none;
-        transition-property: border-color, box-shadow, max-height;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
-      }
-    }
-
-    .ck-focused,
-    .ck-blurred {
-      overflow-y: auto;
-      overflow-x: hidden;
-      transition: max-height 0.5s ease-in-out;
-      ::-webkit-scrollbar {
-        width: 7px;
-      }
-      ::-webkit-scrollbar-track {
-        background: var(--ck-scroll-track-background);
-        border: none;
-      }
-      ::-webkit-scrollbar-thumb {
-        transition: background 2s;
-        background: var(--ck-scroll-thumb-background);
-        border: 1px solid var(--ck-scroll-thumb-border-color);
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        transition: background 2s;
-        background: var(--ck-scroll-thumb-hover-background);
-      }
-      ::-webkit-scrollbar-thumb:active {
-        background: var(--ck-scroll-thumb-active-background);
       }
     }
   }
@@ -193,7 +160,7 @@ export const common = css`
     width: 20px !important;
     height: 25px !important;
     margin-left: -2px !important ;
-    
+
     & svg {
       color: var(--ck-color-text) !important;
       position: absolute;
